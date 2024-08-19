@@ -28,7 +28,7 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     color: #a09e9c;
     background-color: #fff;
@@ -52,13 +52,11 @@ a,
 a:hover,
 a:active,
 a:focus {
-    display: inline-block;
     text-decoration: none;
-    color: #343a3f;
-    font-size: 13px;
-    padding: 0;
-    font-weight: 500;
-    /* text-transform: capitalize; */
+    color: #333333;
+    font-size: 14px;
+    font-weight:350; 
+    
 }
 
 h1,
