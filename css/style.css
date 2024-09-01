@@ -33,28 +33,33 @@
 		Deepest Blue : #000a13
 		
 		Yellow : 1>f7f0d9 2
+		
+	- Spacing system (px)
+	2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ */
 
 /*-------------------------------------
 		1.Top Bar
 --------------------------------------*/
-.top-header{
+.top-header {
 	background-color: #f3f4f8;
-	
+
 }
-.top-header ion-icon{
+
+.top-header ion-icon {
 	vertical-align: middle;
 	height: 1.1rem;
-    width: 1.1rem;
-    color: #0468BF;
+	width: 1.1rem;
+	color: #0468BF;
 }
 
 
-.top-header .row{
-    align-items: center;
-    justify-content: space-between;
+.top-header .row {
+	align-items: center;
+	justify-content: space-between;
 }
 
-.header-contacts{
+.header-contacts {
 	color: #333333;
 	display: flex;
 	font-size: 13px;
@@ -63,19 +68,19 @@
 	gap: 1.4rem;
 }
 
-.header-contacts li:hover{
-	color:  #1e4683;
+.header-contacts li:hover {
+	color: #1e4683;
 }
 
-.social-icons{
+.social-icons {
 	display: flex;
-	gap:1.4rem;
+	gap: 1.4rem;
 	align-items: flex-end;
 	justify-content: end;
 }
 
-.top-header li a:hover{
-	color:  #1e4683;
+.top-header li a:hover {
+	color: #1e4683;
 }
 
 
@@ -84,49 +89,49 @@
 --------------------------------------*/
 
 
-.main-nav .inner-padding{
+.main-nav .inner-padding {
 	padding: 0 1rem;
-	
+
 }
 
-.main-nav .row{
+.main-nav .row {
 	align-items: center;
-	justify-content:space-between;
+	justify-content: space-between;
 }
 
 
-.navbar-brand img{
+.navbar-brand img {
 	width: 10.5rem;
-    vertical-align: top;
-    
+	vertical-align: top;
+
 }
 
-.header-nav ul{
+.header-nav ul {
 	display: flex;
 	gap: 2.4rem;
 }
 
 .header-nav ul li a {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.8;
-    text-transform: capitalize;
-    color:#232323;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.8;
+	text-transform: capitalize;
+	color: #232323;
 }
 
 .header-nav ul li.nav-cta a {
-    background-color: #228be6; 
-    padding: 0.8rem 1.6rem; 
-    border-radius: 0.3rem; 
-    font-weight: 400; 
-    text-transform: capitalize;
-    transition: background-color 0.3s ease-in-out; 
-   
+	background-color: #228be6;
+	padding: 0.8rem 1.6rem;
+	border-radius: 0.3rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	transition: background-color 0.3s ease-in-out;
+
 }
 
 .header-nav ul li.nav-cta a:hover {
-    /* background-color: #fcc419;  */
-    color:#fcc419 !important; /* Keep the text white on hover */
+
+	/* color: #fcc419 !important; */
 }
 
 
@@ -135,22 +140,55 @@
 --------------------------------------*/
 
 .section-hero {
-  
- 
-    background: linear-gradient(261deg, rgba(4, 89, 191, 1) 0%, rgba(4, 104, 191, 0.496) 72%), url("https://demo.bosathemes.com/bosa/education-hub/wp-content/uploads/sites/78/2023/05/img_01.jpg");
-    background-size: cover;
-    background-color: #01247E66;
-	height: 100vh;
+	background: linear-gradient(45deg, rgba(4, 89, 191, 1) 0%, rgba(4, 104, 191, 0.496) 72%), url('../img/fab.png');
+	background-size: cover;
+	height: 85vh;
+
+}
+
+.hero-text-box{
+	display: flex;
+	flex-direction: column;
+	gap : 2.4rem;
+}
+
+.section-hero .subtitle{
+	margin-bottom: -1.8rem;
+}
+
+.hero {
+	display: flex;
 	
+}
+
+.hero-empty {
+	flex: 70%;
+}
+
+.hero-cta{
+	display: flex;
+	gap: 4.8rem;
 }
 
 
 /*-------------------------------------
 		3.About Us Section
 --------------------------------------*/
-
-.container-wrap{
-	display: flex;
+.section-about-us {
+	background-color: #f3f4f8;
+	color: #333;
 	
 }
 
+.about-description {
+	font-size: 1rem;
+	margin-bottom: 30px;
+	color: #555;
+}
+
+.container-wrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+
+}
