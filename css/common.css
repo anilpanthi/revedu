@@ -17,20 +17,19 @@
 }
 
 :root {
-    --primary-color: #228be6;
-    --secondary-color: #D9B341;
-    --background-light: #e6f0f9;
-    --text-dark: #222;
-    --text-light: #555;
-    --link-hover: #034e8f;
-
+    --primary-color: #0088cc;
+    --secondary-color: ##ffd43b;
+    --background-light:#f3f4f8;
+    --light : #fff;
+    --light-grey: #777 ;
+    --text-dark: #333;
 }
 
 
 body {
     font-family: "Open+Sans", sans-serif;
     font-size: 14px;
-    color: #a09e9c;
+    color: var(--light-grey);
     background-color: #fff;
     text-transform: initial;
     margin: 0 auto;
@@ -119,7 +118,7 @@ body {
 
 }
 
-section {
+section:not(#shadow-host-companion) {
     padding: 9.6rem 1.5rem;
 }
 
@@ -207,7 +206,7 @@ section {
 }
 
 .subheading {
-    color: #5087FC;
+    color: var(--primary-color);
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
     font-weight: 600;
