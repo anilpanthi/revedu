@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Section</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section-about-us {
+    background-color: #f3f4f8;
+    color: #333;
+    padding: 50px 0;
+}
+
+.primary-heading {
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #0468BF; /* primary color */
+}
+
+.subheading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #D9B341; /* secondary color */
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+
+.right-section,
+.left-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.features {
+    background-color: #0468BF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.more-about-us {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.more-about {
+    padding: 10px 20px;
+    background-color: #D9B341;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.more-about:hover {
+    background-color: #0468BF;
+}
+
+.round-img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Left Section with Image Overlays */
+.good-parts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.good-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.text-part h3 {
+  font-size: 2rem;
+  color: #0468BF;
+}
+
+.text-part p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.image-part {
+  background-color: #eee; /* Fallback color */
+  background-size: cover;
+  background-position: center;
+  height: 150px; /* Adjust height based on your image */
+  width: 100%; /* Ensure it covers the grid item */
+}
+
+.image-part.image-1 {
+  background-image: url('path-to-your-image1.jpg');
+}
+
+.image-part.image-2 {
+  background-image: url('path-to-your-image2.jpg');
+}
+
+</style>
+
+<body>
+    <section class="section-about-us">
+        <div class="container">
+            <!-- Flex for right and left section -->
+            <div class="container-wrap">
+                <!-- Flex for all contents in right section-->
+                <div class="right-section">
+                    <div class="about-heading">
+                        <h4 class="subheading"> About Us </h4>
+                        <h2 class="primary-heading">Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                        <p class="about-description">
+                            Quisque efficitur lectus vitae porta facilisis. Ut dictum nulla leo, in aliquet mi lacinia
+                            ac.Nunc a nibh at elit sagittis sagittis ut at odio.
+                        </p>
+                    </div>
+
+                    <div class="about-features">
+                        <span class="features">Feature </span>
+                        <span class="features">Feature </span>
+                        <span class="features">Feature </span>
+                        <span class="features">Feature </span>
+                    </div>
+
+                    <div class="more-about-us">
+                        <button class="more-about">More About Us</button>
+                        <img class="round-img"
+                            src="https://dw8ktnn3r32sp.cloudfront.net/img/systempages/cloud_rain.png">
+                    </div>
+
+                </div>
+                <div class="left-section">
+                    <ul class="good-parts">
+                      <li class="good-part image-part">Image 1</li>
+                      <li class="good-part text-part">
+                        <h3>10+</h3>
+                        <p>Years Of Experience</p>
+                      </li>
+                      <li class="good-part text-part">
+                        <h3>15K+</h3>
+                        <p>Satisfied Students</p>
+                      </li>
+                      <li class="good-part image-part">Image 2</li>
+                    </ul>
+                  </div>             
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
