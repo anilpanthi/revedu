@@ -17,12 +17,15 @@
 }
 
 :root {
-    --primary-color: #0088cc;
-    --secondary-color: ##ffd43b;
+    --primary-color: #228be6;
+    --secondary-color: #ffd43b;
+    --light-blue : #0088cc;
     --background-light:#f3f4f8;
     --light : #fff;
     --light-grey: #777 ;
-    --text-dark: #333;
+    --text-dark: #232323;
+    --primary-font : "Open+Sans", Sans-serif;
+    --secondary-font: "Barlow", Sans-serif;
 }
 
 
@@ -53,7 +56,7 @@ a:hover,
 a:active,
 a:focus {
     text-decoration: none;
-    color: #333333;
+    color: var(--light-grey);
     font-size: 14px;
     font-weight: 350;
 
@@ -62,7 +65,7 @@ a:focus {
 
 p {
     margin: 0;
-    color: #767f86;
+    color: var(--light-grey);
     font-size: 14px;
     line-height: 1.8;
     text-transform: initial;
@@ -128,24 +131,21 @@ section:not(#shadow-host-companion) {
 .btn,
 .btn:link,
 .btn:visited {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding: 1rem 2.4rem;
+    background-color: var(--primary-color);
+    padding: 0.75rem 2rem;
     border-radius: 0.3rem;
-    border: none;
-    cursor: pointer;
-    font-family: "Barlow", Sans-serif;
-    transition: all 0.3s;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.75;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btn--full:link,
 .btn--full:visited {
-    background-color: #ffd43b;
-    color: #333;
-
-
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
 }
 
 .btn--full:hover,
@@ -166,6 +166,10 @@ section:not(#shadow-host-companion) {
     box-shadow: inset 0 0 0 3px #fff;
 }
 
+
+
+
+
 /*-------------------------------------
 		3.Texts
 --------------------------------------*/
@@ -184,11 +188,10 @@ section:not(#shadow-host-companion) {
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin: 0px 0px 0px 0px;
 }
 
 .heading-primary {
-    color: #232323;
+    color:var(--text-dark);
     margin: 0px 0px 20px 0px;
     font-family: "Barlow", Sans-serif;
     font-size: 48px;
@@ -198,7 +201,7 @@ section:not(#shadow-host-companion) {
 }
 
 .heading-secondary {
-    color: #232323;
+    color: var(--text-dark);
     margin: 10px 0px 10px 0px;
     font-family: "Barlow", Sans-serif;
     font-size: 22px;
@@ -210,11 +213,11 @@ section:not(#shadow-host-companion) {
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin: 0px 0px 15px 0px;
+    margin-bottom: -8px;
 }
 
 p.desc {
-    color: #666666;
+    color: var(--light-grey);
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
     font-weight: 400;

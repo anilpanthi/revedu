@@ -48,8 +48,8 @@
 
 .top-header ion-icon {
 	vertical-align: middle;
-	height: 1.1rem;
-	width: 1.1rem;
+	height: 1rem;
+	width: 1rem;
 	color: var(--primary-color);
 }
 
@@ -100,7 +100,6 @@
 }
 
 .navbar-brand{
-	
 	margin-left: -10px;
 }
 
@@ -131,11 +130,6 @@
 	text-transform: capitalize;
 	transition: background-color 0.3s ease-in-out;
 
-}
-
-.header-nav ul li.nav-cta a:hover {
-
-	/* color: #fcc419 !important; */
 }
 
 
@@ -178,126 +172,27 @@
 /*-------------------------------------
 		3.About Us Section
 --------------------------------------*/
-.section-about-us {
-	background-color: #f3f4f8;
-	color: #333;
+
+.section-about-us .subtitle{
 	
 }
 
-.about-description {
-	font-size: 1rem;
-	margin-bottom: 30px;
-	color: #555;
-}
-
-.container-wrap {
+.container-wrap{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	gap: 2.4rem;
+
 }
 
-.right-section,
-.left-section {
-	flex: 1;
-	min-width: 300px;
+.right-section{
+	flex: 70%;
 }
 
-.right-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.left-section{
+	flex: 20%;
 }
-
-.about-features {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 1.5rem;
-	margin-bottom: 30px;
-}
-
-.features {
-	background-color: #0468BF;
-	color: #fff;
-	padding: 10px 15px;
-	border-radius: 5px;
-	text-align: center;
-}
-
-.more-about-us {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-}
-
-.more-about {
-	padding: 10px 20px;
-	background-color: #D9B341;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	font-weight: 600;
-	transition: background-color 0.3s;
-}
-
-.more-about:hover {
-	background-color: #0468BF;
-}
-
-.round-img {
-	width: 50px;
-	border-radius: 50%;
-}
-
-/* Left Section with Image Overlays */
-.good-parts {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
-}
-
-.good-part {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #fff;
-	border: 1px solid #ddd;
-	padding: 1rem;
-	text-align: center;
-	font-size: 1.2rem;
-	font-weight: bold;
-}
-
-.text-part h3 {
-	font-size: 2rem;
-	color: #0468BF;
-}
-
-.text-part p {
-	font-size: 1rem;
-	color: #333;
-	margin-top: 0.5rem;
-}
-
-.image-part {
-	background-color: #eee;
-	background-size: cover;
-	background-position: center;
-	height: 150px;
-	width: 100%;
-}
-
-.image-part.image-1 {
-	background-image: url('path-to-your-image1.jpg');
-}
-
-.image-part.image-2 {
-	background-image: url('path-to-your-image2.jpg');
-}
-
-
 /*-------------------------------------
 		4.Footer Section
 --------------------------------------*/
