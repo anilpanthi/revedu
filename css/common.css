@@ -18,10 +18,11 @@
 
 :root {
     --primary-color: #228be6;
-    --secondary-color: #ffd43b;
+    --text-blue:#5087fc;
     --light-blue : #0088cc;
+    --secondary-color: #ffd43b;
     --background-light:#f3f4f8;
-    --light : #fff;
+    --light-color: #fff;
     --light-grey: #777 ;
     --text-dark: #232323;
     --primary-font : "Open+Sans", Sans-serif;
@@ -30,8 +31,8 @@
 
 
 body {
-    font-family: "Open+Sans", sans-serif;
-    font-size: 14px;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 1rem;
     color: var(--light-grey);
     background-color: #fff;
     text-transform: initial;
@@ -128,7 +129,7 @@ section:not(#shadow-host-companion) {
 /*-------------------------------------
 		2.Buttons
 --------------------------------------*/
-.btn,
+.btn, 
 .btn:link,
 .btn:visited {
     background-color: var(--primary-color);
@@ -137,6 +138,7 @@ section:not(#shadow-host-companion) {
     font-family: var(--primary-font);
     font-size: 1.2rem;
     font-weight: 400;
+    color: #f3f4f8;
     letter-spacing: 0.75;
     text-transform: capitalize;
     transition: background-color 0.3s ease-in-out;
@@ -176,36 +178,47 @@ section:not(#shadow-host-companion) {
 
 .heading-hero {
     color: #FFFFFF;
-    font-family: "Barlow", Sans-serif;
-    font-size: 4.4rem;
-    font-weight: 600;
-    line-height: 1;
+    font-family:  "Open Sans", Sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height:1.2;
     text-transform: capitalize;
+   
 }
 
 .subtitle {
-    color: #fff;
-    font-family: "Open+Sans", Sans-serif;
+    color: #FFFFFF;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p.hero-desc {
+    color: #FFFFFF;
+    font-family: "Open Sans", Sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: 1.6;
+   
 }
 
 .heading-primary {
     color:var(--text-dark);
     margin: 0px 0px 20px 0px;
     font-family: "Barlow", Sans-serif;
-    font-size: 48px;
+    font-size: 70px;
     font-weight: 700;
     line-height: 1em;
 
 }
 
 .heading-secondary {
-    color: var(--text-dark);
-    margin: 10px 0px 10px 0px;
+    color: #232323;
     font-family: "Barlow", Sans-serif;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
 }
 
 .subheading {
@@ -213,23 +226,14 @@ section:not(#shadow-host-companion) {
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: -8px;
+    margin-bottom: 1.5rem;
 }
 
 p.desc {
-    color: var(--light-grey);
+    color: #666666;
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.6;
 
 }
 
-p.hero-desc {
-    color: #FFFFFF;
-    font-family: "Open Sans", Sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.8rem;
-
-}
